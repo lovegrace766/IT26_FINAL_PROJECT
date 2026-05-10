@@ -1,8 +1,188 @@
+<<<<<<< HEAD
+<!-- index.html -->
+=======
+>>>>>>> a6a393f2c9b901076416eb168d92bc5981d519c9
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+    <title>Foodie Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+
+        <div class="logo">
+            <i class='bx bxs-store-alt'></i>
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="#" data-view="home" class="active">
+                    <i class='bx bxs-dashboard'></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" data-view="favorites">
+                    <i class='bx bxs-heart'></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" data-view="messages">
+                    <i class='bx bxs-message-dots'></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" data-view="checkout">
+                    <i class='bx bxs-credit-card'></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" data-view="settings">
+                    <i class='bx bxs-cog'></i>
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Main -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <header>
+
+            <div class="greeting">
+                <h2 id="greeting-title">Hello, Alex!</h2>
+                <p id="greeting-sub">What do you want to eat today?</p>
+            </div>
+
+            <div class="header-actions">
+
+                <div class="search-box">
+                    <i class='bx bx-search'></i>
+                    <input type="text" id="search-input" placeholder="Search food...">
+                </div>
+
+                <div class="user-profile">
+                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100">
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- HOME -->
+        <div id="view-home" class="view-section active-view">
+
+            <section class="banner">
+
+                <div class="banner-text">
+                    <h1>Free Delivery over $50!</h1>
+                    <p>Enjoy your favorite meals today.</p>
+                    <button>Order Now</button>
+                </div>
+
+                <div class="banner-img">🍔</div>
+
+            </section>
+
+            <div class="section-title">
+                <h3>Popular Meals</h3>
+            </div>
+
+            <div class="food-grid" id="food-grid"></div>
+
+            <div class="no-results" id="no-results">
+                No foods found.
+            </div>
+
+        </div>
+
+        <!-- FAVORITES -->
+        <div id="view-favorites" class="view-section">
+
+            <div class="section-title">
+                <h3>Your Favorites</h3>
+            </div>
+
+            <div class="food-grid" id="favorites-grid"></div>
+
+            <div class="no-results" id="no-favorites">
+                No favorites added yet.
+            </div>
+
+        </div>
+
+        <!-- MESSAGES -->
+        <div id="view-messages" class="view-section">
+
+            <div class="messages-container">
+
+                <div class="chat-list">
+
+                    <div class="chat-item active">
+
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=100">
+
+                        <div class="chat-info">
+                            <h4>Burger Palace</h4>
+                            <p>Your order is on the way.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="chat-window">
+
+                    <div class="chat-header">
+
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=100">
+
+                        <span>Burger Palace</span>
+
+                    </div>
+
+                    <div class="chat-messages">
+
+                        <div class="message received">
+                            Hi Alex! Thanks for ordering.
+                        </div>
+
+                        <div class="message sent">
+                            Thank you!
+                        </div>
+
+                    </div>
+
+                    <div class="chat-input">
+
+                        <input type="text" id="message-input" placeholder="Type message...">
+
+                        <button onclick="sendMessage()">
+                            Send
+                        </button>
+
+                    </div>
+
+=======
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 
@@ -86,10 +266,154 @@
                  <div class="input-box">
                         <input type="text" class="input-field" placeholder="Lastname">
                         <i class="bx bx-user"></i>
+>>>>>>> a6a393f2c9b901076416eb168d92bc5981d519c9
                 </div>
 
             </div>
 
+<<<<<<< HEAD
+        </div>
+
+        <!-- CHECKOUT -->
+        <div id="view-checkout" class="view-section">
+
+            <div class="checkout-container">
+
+                <div class="checkout-form">
+
+                    <h3>Delivery Details</h3>
+
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter name">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Address</label>
+                        <input type="text" placeholder="Enter address">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="text" placeholder="Enter phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Payment Method</label>
+
+                        <select>
+                            <option>Cash on Delivery</option>
+                            <option>GCash</option>
+                            <option>Credit Card</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="checkout-summary-panel">
+
+                    <h3>Order Summary</h3>
+
+                    <div id="checkout-items-list"></div>
+
+                    <div class="summary-item">
+                        <span>Subtotal</span>
+                        <span id="chk-subtotal">$0.00</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Delivery</span>
+                        <span id="chk-delivery">$0.00</span>
+                    </div>
+
+                    <div class="summary-item total">
+                        <span>Total</span>
+                        <span id="chk-total">$0.00</span>
+                    </div>
+
+                    <button class="place-order-btn" onclick="placeOrder()">
+                        Place Order
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- SETTINGS -->
+        <div id="view-settings" class="view-section">
+
+            <div class="settings-container">
+
+                <h2>Account Settings</h2>
+
+                <div class="settings-item">
+                    <label>Full Name</label>
+                    <input type="text" value="Alex Johnson">
+                </div>
+
+                <div class="settings-item">
+                    <label>Email</label>
+                    <input type="email" value="alex@email.com">
+                </div>
+
+                <button class="save-settings-btn">
+                    Save Changes
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Right Sidebar -->
+    <aside class="right-sidebar">
+
+        <div class="basket-header">
+
+            <h3>My Basket</h3>
+
+            <i class='bx bxs-trash' id="clear-cart"></i>
+
+        </div>
+
+        <div id="cart-items" class="order-items">
+
+            <div class="empty-cart">
+                Your basket is empty
+            </div>
+
+        </div>
+
+        <div class="checkout-section">
+
+            <div class="checkout-row">
+                <span>Subtotal</span>
+                <span id="cart-subtotal">$0.00</span>
+            </div>
+
+            <div class="checkout-row">
+                <span>Delivery</span>
+                <span id="cart-delivery">$0.00</span>
+            </div>
+
+            <div class="checkout-row total">
+                <span>Total</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+
+            <button class="checkout-btn" id="checkout-btn">
+                Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+    <script src="script.js"></script>
+=======
              <div class="input-box">
                         <input type="text" class="input-field" placeholder="Email">
                         <i class="bx bx-envelope"></i>
@@ -161,6 +485,7 @@
 
 
 </script>
+>>>>>>> a6a393f2c9b901076416eb168d92bc5981d519c9
 
 </body>
 </html>
